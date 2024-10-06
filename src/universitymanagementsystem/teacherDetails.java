@@ -29,7 +29,7 @@ public class teacherDetails extends JFrame implements ActionListener{
             Conn c= new Conn();
             ResultSet rs = c.s.executeQuery("Select *from teacher");
             while(rs.next()){
-                cempId.add(rs.getString("rollno"));
+                cempId.add(rs.getString("empId"));
             }
         }catch(Exception e){
             e.printStackTrace();

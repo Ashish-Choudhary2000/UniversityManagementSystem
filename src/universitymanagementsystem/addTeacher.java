@@ -9,7 +9,7 @@ import java.awt.event.*;
 public class addTeacher extends JFrame implements ActionListener {
     
     JTextField tfname, tffname, tfaddress, tfphone, tfemail, tfx, tfxII, tfaadhar;
-    JLabel labelempId;  // Class-level variable for Employee ID
+    JLabel labelempId;  
     
     JDateChooser dcdob;
     JComboBox<String> cbcourse, cbbranch;

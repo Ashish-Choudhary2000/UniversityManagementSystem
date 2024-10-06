@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import java.awt.event.*;
+import java.net.URL;
 
 public class studentFeesForm extends JFrame implements ActionListener{
     
@@ -20,12 +21,23 @@ public class studentFeesForm extends JFrame implements ActionListener{
         
         getContentPane().setBackground(Color.WHITE);
         
-       /* ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResources("icons/fee.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(500, 300, Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel image = new JLabel(i3);
-        image.setBounds(400, 50, 500, 300);
-        add(image);  */
+        try {
+    URL imageUrl = getClass().getResource("/icons/fee.jpg");  
+    if (imageUrl != null) {
+        ImageIcon i1 = new ImageIcon(imageUrl);  
+        Image i2 = i1.getImage().getScaledInstance(500, 300, Image.SCALE_DEFAULT);  
+        ImageIcon i3 = new ImageIcon(i2);  
+        JLabel image = new JLabel(i3);  
+        image.setBounds(400, 50, 500, 300);  
+        add(image);  
+    } else {
+        System.out.println("Image resource not found.");
+    }
+} catch (Exception e) {
+    e.printStackTrace();
+}
+
+      
        
        JLabel lblrollnumber = new JLabel("Select Roll No");
         lblrollnumber.setBounds(40,60,150,20);

@@ -9,23 +9,23 @@ public class Project extends JFrame implements ActionListener{
     Project(){
         setSize(1540,850);
        try {
-    // Corrected: Use getResource() to get a single URL instead of getSystemResources()
+
     URL imageUrl = ClassLoader.getSystemResource("icons/third.jpg");
     
-    // Ensure the resource is found
+   
     if (imageUrl != null) {
-        ImageIcon i1 = new ImageIcon(imageUrl);  // Load the image from the URL
-        Image i2 = i1.getImage().getScaledInstance(1500, 750, Image.SCALE_DEFAULT);  // Scale the image
-        ImageIcon i3 = new ImageIcon(i2);  // Create an ImageIcon from the scaled image
-        JLabel image = new JLabel(i3);  // Add the ImageIcon to a JLabel
-        add(image);  // Add the JLabel to your container
+        ImageIcon i1 = new ImageIcon(imageUrl);  
+        Image i2 = i1.getImage().getScaledInstance(1500, 750, Image.SCALE_DEFAULT);  
+        ImageIcon i3 = new ImageIcon(i2);  
+        JLabel image = new JLabel(i3); 
+        add(image);  
     } else {
         System.out.println("Image resource not found.");
     }
 } catch (Exception e) {
     e.printStackTrace();
 }
-
+    
         JMenuBar mb = new JMenuBar();
 
         JMenu newInformation  = new JMenu("New Information");
@@ -89,7 +89,7 @@ public class Project extends JFrame implements ActionListener{
         exam.setForeground(Color.BLUE);
         mb.add(exam);
 
-        JMenuItem examinationDetails = new JMenuItem(" Examination Results");
+        JMenuItem examinationDetails = new JMenuItem("Examination Results");
         examinationDetails.setForeground(Color.WHITE);
         examinationDetails.addActionListener(this);
         exam.add(examinationDetails);
@@ -103,7 +103,7 @@ public class Project extends JFrame implements ActionListener{
         updateInfo.setForeground(Color.BLUE);
         mb.add(updateInfo);
 
-        JMenuItem updateFacultyInfo = new JMenuItem(" Update Faculty Details");
+        JMenuItem updateFacultyInfo = new JMenuItem("Update Faculty Details");
         updateFacultyInfo.setForeground(Color.WHITE);
         updateFacultyInfo.addActionListener(this);
         updateInfo.add(updateFacultyInfo);
@@ -117,7 +117,7 @@ public class Project extends JFrame implements ActionListener{
         fee.setForeground(Color.BLUE);
         mb.add(fee);
 
-        JMenuItem feeStructure = new JMenuItem(" Fee Structure");
+        JMenuItem feeStructure = new JMenuItem("Fee Structure");
         feeStructure.setForeground(Color.WHITE);
         feeStructure.addActionListener(this);
         fee.add(feeStructure);
@@ -131,7 +131,7 @@ public class Project extends JFrame implements ActionListener{
         utility.setForeground(Color.BLUE);
         mb.add(utility);
 
-        JMenuItem notepad = new JMenuItem(" Notepad");
+        JMenuItem notepad = new JMenuItem("Notepad");
         notepad.setForeground(Color.WHITE);
         notepad.addActionListener(this);
         utility.add(notepad);

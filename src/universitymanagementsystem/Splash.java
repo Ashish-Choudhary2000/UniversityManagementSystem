@@ -1,16 +1,29 @@
 package universitymanagementsystem;
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 public class Splash extends JFrame implements Runnable {
     Thread t;
 
     Splash() {
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResources("/icons/first.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(1000, 700, Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel image = new JLabel(i3);
-        add(image);
+        try {
+    // Corrected: Use getResource() to get a single URL instead of getSystemResources()
+    URL imageUrl = ClassLoader.getSystemResource("icons/first.jpg");
+    
+    // Ensure the resource is found
+    if (imageUrl != null) {
+        ImageIcon i1 = new ImageIcon(imageUrl);  // Load the image from the URL
+        Image i2 = i1.getImage().getScaledInstance(1500, 750, Image.SCALE_DEFAULT);  // Scale the image
+        ImageIcon i3 = new ImageIcon(i2);  // Create an ImageIcon from the scaled image
+        JLabel image = new JLabel(i3);  // Add the ImageIcon to a JLabel
+        add(image);  // Add the JLabel to your container
+    } else {
+        System.out.println("Image resource not found.");
+    }
+} catch (Exception e) {
+    e.printStackTrace();
+}
 
         // Start the thread
         t = new Thread(this);

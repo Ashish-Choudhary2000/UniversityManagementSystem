@@ -4,10 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/Marks.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/teacherDetails.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/studentFeesForm.java</file>
             <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/Project.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/examinationDetails.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/feeStructure.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/Login.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/addTeacher.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/enterMarks.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/StudentDetails.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/Conn.java</file>
+            <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/addStudent.java</file>
             <file>file:/C:/Users/admin/Documents/NetBeansProjects/universityManagementSystem/src/universitymanagementsystem/Splash.java</file>
         </group>
     </open-files>
